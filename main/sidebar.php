@@ -41,52 +41,7 @@
       </ul>
     <?php }
     ?>
-    <?php if (in_array(19, $permissions)) { ?>
 
-      <ul>
-        <li class="relative px-6 py-2">
-          <a class="inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="useractivity">
-            <i style="color: #057c7c;" class="fa-solid fa-user-clock"></i>
-            <span class="ml-3">Customer Activity</span>
-          </a>
-        </li>
-      </ul>
-    <?php } ?>
-    <?php if (in_array(17, $permissions)) { ?>
-      <ul>
-        <li class="relative px-6 py-2">
-          <a class="inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="ticketbooking">
-            <i style="color: #057c7c;" class="fa-solid fa-user-clock"></i>
-            <span class="ml-3">Vehicle Booking</span>
-          </a>
-        </li>
-      </ul>
-    <?php } ?>
-    <?php if (in_array(20, $permissions)) {
-    ?>
-      <ul>
-        <li class="relative px-6 py-2">
-          <a class="inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="drivers">
-            <i style="color: #057c7c;" class="fa-solid fa-indian-rupee-sign"></i>
-            <span class="ml-4">Drivers</span>
-          </a>
-        </li>
-      </ul>
-    <?php }
-    ?>
-
-    <?php if (in_array(13, $permissions)) {
-    ?>
-      <ul>
-        <li class="relative px-6 py-2">
-          <a class="inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="vehicles">
-            <i style="color: #057c7c;" class="fa-solid fa-money-bill-transfer"></i>
-            <span class="ml-3">Vehicles</span>
-          </a>
-        </li>
-      </ul>
-    <?php }
-    ?>
     <?php if (in_array(12, $permissions)) { ?>
       <ul>
         <li class="relative px-6 py-2">
@@ -129,16 +84,7 @@
         </a>
       </li>
     </ul>
-    <?php if (in_array(31, $permissions)) { ?>
-      <!-- <ul>
-        <li class="relative px-6 py-2">
-          <a class="inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="requestwithdrawal">
-            <i class="fas fa-rupee-sign"></i>
-            <span class="ml-3">Request Withdrawal</span>
-          </a>
-        </li>
-      </ul> -->
-    <?php } ?>
+
     <?php if (in_array(8, $permissions)) { ?>
       <ul>
         <li class="relative px-6 py-2">
@@ -165,32 +111,6 @@
     </ul>
     <?php //} 
     ?>
-    <?php //if (in_array(25, $permissions)) { 
-    ?>
-    <ul>
-      <li class="relative px-6 py-2">
-        <a class="inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="drivers">
-          <i style="color: #057c7c;" class="fa-solid fa-indian-rupee-sign"></i>
-          <span class="ml-4">Drivers</span>
-        </a>
-      </li>
-    </ul>
-    <?php //} 
-    ?>
-
-    <?php //if (in_array(29, $permissions)) { 
-    ?>
-    <ul>
-      <li class="relative px-6 py-2">
-        <a class="inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="vehicles">
-          <i style="color: #057c7c;" class="fa-solid fa-money-bill-transfer"></i>
-          <span class="ml-3">Vehicles</span>
-        </a>
-      </li>
-    </ul>
-    <?php //} 
-    ?>
-
     <?php if (in_array(999, $permissions)) { ?>
       <div class="px-6 my-6">
         <button class="flex items-center justify-between w-full px-4 py-2  font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" onclick='window.location.href="settings"'>
