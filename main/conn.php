@@ -27,9 +27,9 @@ if (($_SERVER['HTTP_HOST'] == 'localhost')) {
         define("BASE_URL", "https://gatitour.in/");
     }
     $host = "localhost";
-    $database_Username = "u414903392_root";
-    $database_Password = "0f&||o5EJj|L";
-    $database_Name = "u414903392_gatitour";
+    $database_Username = "u414903392_rooted";
+    $database_Password = "Q;oV*2;92w";
+    $database_Name = "u414903392_longrun";
     $siteurl = "https://gatitour.in/";
     $port = 3306;
     ini_set('display_errors', 1);
