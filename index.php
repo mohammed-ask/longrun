@@ -37,9 +37,6 @@ switch ($request['path']) {
     case "$head/customers";
         require __DIR__ . '/main/customers.php';
         break;
-    case "$head/drivers";
-        require __DIR__ . '/main/drivers.php';
-        break;
 
     case "$head/fillseats";
         require __DIR__ . '/main/fillseats.php';
