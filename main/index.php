@@ -1,7 +1,6 @@
 <?php
 include "function.php";
 include "conn.php";
-$rowvehicles = $obj->selectextrawhere("vehiclenames", "status = 1 and id!=9")
 ?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -495,18 +494,7 @@ $rowvehicles = $obj->selectextrawhere("vehiclenames", "status = 1 and id!=9")
                 </div>
                 <br />
                 <fieldset>
-                  <legend>Your Details</legend>
-                  <label for="fname">Select Tour Vehicle<span style="color:red">*</span></label>
-                  <div style="display:flex;justify-content:space-between">
-                    <?php
-                    while ($rvehicle = $obj->fetch_assoc($rowvehicles)) { ?>
-                      <div class="vtype" style="align-items: center;justify-content:center;text-align:center;cursor:pointer">
-                        <input class="vcar" hidden type="text" value="<?= $rvehicle['id'] ?>">
-                        <img src="<?= $rvehicle['path2'] ?>" style="width: 100px;height:100px;object-fit:contain" />
-                        <h6 class="carhead"><?= $rvehicle['name'] ?></h6>
-                      </div>
-                    <?php } ?>
-                  </div>
+
                   <input type="text" data-bvalidator="required" id="vehicleid" value="" name="vehicleid" hidden />
                   <div class="colums">
 
