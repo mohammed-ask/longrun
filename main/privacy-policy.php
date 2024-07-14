@@ -37,7 +37,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for "Tell My Name" Game</h1>
-        <p><strong>Effective Date:</strong> [Insert Date]</p>
+        <p><strong>Effective Date:</strong> 01/07/2024</p>
 
         <h2>Welcome to "Tell My Name" (the "Game"). We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we handle your information when you use our Game.</h2>
 
