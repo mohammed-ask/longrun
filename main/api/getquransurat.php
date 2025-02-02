@@ -247,9 +247,10 @@ if (true) {
 
         
         // Query the database
-        $dev = $obj->selectextrawhereupdate("surah", "*", "status =1")->fetch_assoc();
+        $dev = $obj->selectextrawhereupdate("surah", "*", "status =1");
+        
             // Check if data is found
-            $data['suratData'] = $dev;
+            $data['suratData'] = mysqli_fetch_all($dev, true);
             if (true) {
                 // Return the data as JSON
                 header('Content-Type: application/json');
