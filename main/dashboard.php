@@ -1,5 +1,5 @@
 <?php
-include "main/session.php";
+include "./session.php";
 /* @var $obj db */
 ob_start();
 $totalcutomer = $obj->selectfieldwhere("users", "count(id)", "status=1 and type=2");

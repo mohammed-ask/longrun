@@ -17,9 +17,9 @@ $database_Name = "gatitour";
 $port = 3306;
 
 //Hostinger Server
-$database_Username = "u414903392_root";
+$database_Username = "u414903392_rooted";
 $database_Password = "0f&||o5EJj|L";
-$database_Name = "u414903392_gatitour";
+$database_Name = "u414903392_longrun";
 $port = 3306;
 date_default_timezone_set('Asia/Kolkata');
 /* object for db class in function.php $obj */
@@ -242,27 +242,32 @@ function getAuthorizationHeader()
 }
 
 
-if (isset($_GET['playerid'])) {
+if (true) {
+    if (true) {
 
-    $xx['playerid'] = $_GET['playerid'];
-    // Query the database
-    $user = $obj->updatewhere("users", $xx, "apptoken='" . getAuthorizationHeader() . "'");
+        
+        // Query the database
 
-    // Check if data is found
-    if ($user > 0) {
-        // Return the data as JSON
-        header('Content-Type: application/json');
-        $data['status'] = "200";
+            // Check if data is found
+            if (true) {
+                // Return the data as JSON
+                header('Content-Type: application/json');
+                $data['status'] = "200";
 
-        echo json_encode($data);
+                echo json_encode($data);
+            } else {
+                // If no data found
+                header('HTTP/1.1 404 Not Found');
+                echo json_encode(['error' => 'Somthing went wrong']);
+            }
     } else {
-        header('HTTP/1.1 404 Not Found');
-        echo json_encode(['error' => 'Mobile number already registered']);
+        // If userid is not provided
+        header('HTTP/1.1 400 Bad Request');
+        echo json_encode(['error' => 'Lattitude Longitude is required']);
     }
 } else {
-    // If userid is not provided
     header('HTTP/1.1 400 Bad Request');
-    echo json_encode(['error' => 'Player ID required']);
+    echo json_encode(['error' => 'Token is invalid']);
 }
 // run SQL statement
 

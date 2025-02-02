@@ -1,6 +1,6 @@
 <?php
-include "function.php";
-include "conn.php";
+// include "function.php";
+// include "conn.php";
 ?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">

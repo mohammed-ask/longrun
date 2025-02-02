@@ -16,7 +16,7 @@ if (($_SERVER['HTTP_HOST'] == 'localhost')) {
     $host = "localhost";
     $database_Username = "root";
     $database_Password = "";
-    $database_Name = "gatitour";
+    $database_Name = "longrun";
     $siteurl = "http://localhost/gatitour/";
     $port = 3306;
     ini_set('display_errors', 1);

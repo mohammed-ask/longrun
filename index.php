@@ -2,7 +2,7 @@
 // echo $_SERVER['REQUEST_URI']." ";
 $head = "";
 if (($_SERVER['HTTP_HOST'] == 'localhost')) {
-    $head = "/gatitourcms";
+    $head = "/longrun";
 }
 $request = parse_url($_SERVER['REQUEST_URI']);
 switch ($request['path']) {
@@ -107,6 +107,9 @@ switch ($request['path']) {
         break;
     case "$head/deleteemployee";
         require __DIR__ . '/main/deleteemployee.php';
+        break;
+    case "$head/api/getquransurat";
+        require __DIR__ . '/main/api/getquransurat.php';
         break;
     case "$head/gitpull";
         require __DIR__ . '/main/guthubpull.php';
