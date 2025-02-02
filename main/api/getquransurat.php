@@ -247,8 +247,9 @@ if (true) {
 
         
         // Query the database
-
+        $dev = $obj->selectextrawhereupdate("surah", "*", "status =1")->fetch_assoc();
             // Check if data is found
+            $data['suratData'] = $dev;
             if (true) {
                 // Return the data as JSON
                 header('Content-Type: application/json');
